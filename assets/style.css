@@ -50,3 +50,45 @@ header {
     padding: 20px;
     max-width: 40%;
 }
+
+/* DEPLOYED APPLICATION STYLES */
+
+.deployed-apps {
+    max-width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flex-row {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.thumbnails {
+    padding: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.thumbnail-prime {
+    max-width: 80%;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+.thumbnail-prime img {
+    max-width: 100%;
+}
+
+.thumbnail {
+    max-width: 40%;
+    padding: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail img {
+    max-width: 100%;
+}
