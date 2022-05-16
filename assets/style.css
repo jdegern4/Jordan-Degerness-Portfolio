@@ -23,7 +23,26 @@ header {
     padding: 20px 35px;
     background-image: linear-gradient(var(--quaternary-color), var(--primary-color));
     display: flex;
+    justify-content: space-around;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.75vw;
+    text-shadow: 0 0 10px rgba(245, 237, 237, 0.5);
 }
 
 /* HEADSHOT/INTRO STYLES */
@@ -32,23 +51,35 @@ header {
     max-width: 100%;
     padding: 20px 30px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: flex-start;
 }
 
 .headshot {
+    max-width: 40%;
     padding: 20px;
 }
 
 .headshot img {
-    max-width: 40%;
+    max-width: 100%;
     height: auto;
+    border-width: 10px;
+    border-style: groove;
+    border-color: var(--tertiary-color);
 }
 
 .intro {
     padding: 20px;
     max-width: 40%;
+}
+
+.intro h2 {
+    padding: 20px;
+}
+
+.intro p {
+    padding-bottom: 20px;
+    padding-left: 20px;
 }
 
 /* DEPLOYED APPLICATION STYLES */
@@ -61,13 +92,18 @@ header {
     justify-content: space-evenly;
 }
 
-.flex-row {
+.deployed-header {
     padding-bottom: 10px;
     text-align: center;
 }
 
+.deployed-header h2 {
+    text-decoration: underline;
+}
+
 .thumbnails {
     padding: 30px;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
@@ -79,11 +115,12 @@ header {
 }
 
 .thumbnail-prime img {
-    max-width: 100%;
+    width: 100%;
+    border-radius: 15px;
 }
 
 .thumbnail {
-    max-width: 40%;
+    max-width: 350px;
     padding: 30px;
     flex-wrap: wrap;
     justify-content: center;
@@ -91,4 +128,40 @@ header {
 
 .thumbnail img {
     max-width: 100%;
+    border-radius: 15px;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+
+@media screen and (max-width: 980px) {
+    header {
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+
+@media screen and (max-width: 575px) {
+    .intro {
+        width: 100%;
+        padding: 20px;
+    }
+    .intro h2, .intro p {
+        width: 100%;
+    }
 }
