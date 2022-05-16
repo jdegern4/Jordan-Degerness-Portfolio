@@ -150,19 +150,20 @@ header nav ul li a {
 
 /* CONTACT SECTION STYLES */
 
-.contact {
+#contact-me {
     padding: 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    text-align: center;
+    background-image: linear-gradient(var(--primary-color), var(--quaternary-color));
+
 }
 
-.contact h2 {
+#contact-me h2 {
     padding: 30px;
 }
 
-.contact h2 address {
+#contact-me h2 address {
     padding: 30px;
+    text-decoration: none;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
