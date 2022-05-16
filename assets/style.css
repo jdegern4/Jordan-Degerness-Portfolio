@@ -20,7 +20,7 @@ body {
 /* HEADER STYLES */
 
 header {
-    padding: 20px 35px;
+    padding: 80px 35px;
     background-image: linear-gradient(var(--quaternary-color), var(--primary-color));
     display: flex;
     justify-content: space-around;
@@ -40,7 +40,7 @@ header nav ul {
 
 header nav ul li a {
     padding: 10px 15px;
-    font-weight: lighter;
+    font-weight: bold;
     font-size: 1.75vw;
     text-shadow: 0 0 10px rgba(245, 237, 237, 0.5);
 }
@@ -50,14 +50,12 @@ header nav ul li a {
 .introduction {
     max-width: 100%;
     padding: 20px 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
 .headshot {
     max-width: 40%;
     padding: 20px;
+    float: left;
 }
 
 .headshot img {
@@ -70,7 +68,6 @@ header nav ul li a {
 
 .intro {
     padding: 20px;
-    max-width: 40%;
 }
 
 .intro h2 {
@@ -80,37 +77,36 @@ header nav ul li a {
 .intro p {
     padding-bottom: 20px;
     padding-left: 20px;
+    line-height: 1.5;
 }
 
 /* DEPLOYED APPLICATION STYLES */
 
 .deployed-apps {
     max-width: 100%;
-    padding: 20px 30px;
+    padding: 20px 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
 .deployed-header {
-    padding-bottom: 10px;
+    padding-top: 20px;
     text-align: center;
+    clear: both;
 }
 
 .deployed-header h2 {
     text-decoration: underline;
 }
 
-.thumbnails {
+.thumbnail-prime-flex {
     padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
 .thumbnail-prime {
-    max-width: 80%;
-    padding-bottom: 30px;
+    max-width: 100%;
+    padding: 30px;
     align-items: center;
 }
 
@@ -119,16 +115,54 @@ header nav ul li a {
     border-radius: 15px;
 }
 
-.thumbnail {
-    max-width: 350px;
-    padding: 30px;
+.thumbnail-prime img:hover {
+    opacity: .5;
+}
+
+.thumbnail-prime h3 {
+    margin: 10px;
+}
+
+.thumbnails-small-flex {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.thumbnail {
+    max-width: 40%;
+    padding: 30px;
 }
 
 .thumbnail img {
     max-width: 100%;
     border-radius: 15px;
+}
+
+.thumbnail img:hover {
+    opacity: .5;
+}
+
+.thumbnail h3 {
+    margin: 10px;
+}
+
+/* CONTACT SECTION STYLES */
+
+.contact {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact h2 {
+    padding: 30px;
+}
+
+.contact h2 address {
+    padding: 30px;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
@@ -137,6 +171,7 @@ header nav ul li a {
     header {
         justify-content: center;
         position: relative;
+        flex-wrap: wrap;
     }
 
     header h1 {
@@ -146,7 +181,8 @@ header nav ul li a {
 
     header nav ul {
         width: 100%;
-        justify-content: center;
+        padding: 30px;
+        justify-content: space-evenly;
     }
 
     header nav ul li a {
